@@ -4,6 +4,7 @@ use DomainException;
 use League\CommonMark\CommonMarkConverter;
 use Morrislaptop\ErrorTracker\Provider\Email;
 use Morrislaptop\ErrorTracker\Provider\Email\Body;
+use Morrislaptop\ErrorTracker\Provider\Email\Compiler;
 use PHPUnit_Framework_TestCase;
 use Swift_Mailer;
 use Swift_Message;
@@ -25,7 +26,7 @@ class EmailTest extends PHPUnit_Framework_TestCase {
         $message->addTo('craig.michael.morris@gmail.com');
         $message->setFrom('craig.michael.morris@gmail.com');
         $body = new Body(new VarCloner(), new CliDumper());
-        $compiler = new Email\Compiler(new CommonMarkConverter(), new CssToInlineStyles());
+        $compiler = new Compiler(new CommonMarkConverter(), new CssToInlineStyles());
         $email = new Email($mailer, $message, $body, $compiler);
         $exception = new DomainException('Testing a domain exception');
 

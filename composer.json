@@ -1,0 +1,28 @@
+{
+    "name": "morrislaptop/error-tracker-adapter-email",
+    "description": "Send email reports on exceptions",
+    "require": {
+        "morrislaptop/error-tracker-adapter": "dev-master",
+        "swiftmailer/swiftmailer": "~5.3",
+        "league/commonmark": "0.7.*",
+        "symfony/var-dumper": "~2.6",
+        "tijsverkoyen/css-to-inline-styles": "~1.5"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "~4.5",
+        "phpspec/phpspec": "~2.1"
+    },
+    "autoload": {
+        "psr-4": {
+           "Morrislaptop\\ErrorTracker\\": "src/"
+        }
+    },
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Craig Morris",
+            "email": "craig.michael.morris@gmail.com"
+        }
+    ],
+    "minimum-stability": "stable"
+}

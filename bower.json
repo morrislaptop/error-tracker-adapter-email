@@ -1,0 +1,20 @@
+{
+  "name": "error-tracker-adapter-email",
+  "version": "0.0.0",
+  "homepage": "https://github.com/morrislaptop/error-tracker-adapter-email",
+  "authors": [
+    "Craig Morris <craig.michael.morris@gmail.com>"
+  ],
+  "license": "MIT",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "github-markdown-css": "~2.0.4"
+  }
+}

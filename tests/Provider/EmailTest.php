@@ -34,7 +34,6 @@ class EmailTest extends PHPUnit_Framework_TestCase
 
     public function testReport()
     {
-        var_dump($_ENV);
         var_dump(getenv('MAILTRAP_USERNAME'));
         var_dump(getenv('MAILTRAP_PASSWORD'));
         var_dump(getenv('MAILTRAP_INBOX'));

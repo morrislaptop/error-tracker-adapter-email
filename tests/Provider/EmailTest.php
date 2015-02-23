@@ -34,6 +34,8 @@ class EmailTest extends PHPUnit_Framework_TestCase
 
     public function testReport()
     {
+        var_dump($_ENV);
+
         //  Arrange.
         $transport = new \Swift_SmtpTransport();
         $transport->setHost('mailtrap.io');

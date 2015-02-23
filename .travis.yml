@@ -9,5 +9,5 @@ matrix:
   allow_failures:
     - php: hhvm
 
-install: composer install && bower install
+install: composer install && npm install -g bower && bower install
 script: phpunit && vendor/bin/phpspec run

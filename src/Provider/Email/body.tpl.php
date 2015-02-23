@@ -15,7 +15,7 @@
 # Stack Trace
 
 ```
-<?php echo $e->getTraceAsString(); ?>
+<?php echo (string) $e; ?>
 
 ```
 

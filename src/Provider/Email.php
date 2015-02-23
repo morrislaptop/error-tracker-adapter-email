@@ -1,13 +1,10 @@
 <?php namespace Morrislaptop\ErrorTracker\Provider;
 
 use Exception;
-use League\CommonMark\CommonMarkConverter;
 use Morrislaptop\ErrorTracker\Provider\Email\Body;
 use Morrislaptop\ErrorTracker\Provider\Email\Compiler;
 use Swift_Mailer;
 use Swift_Message;
-use Symfony\Component\VarDumper\Cloner\VarCloner;
-use Symfony\Component\VarDumper\Dumper\CliDumper;
 
 class Email extends AbstractProvider
 {
@@ -16,6 +13,7 @@ class Email extends AbstractProvider
      * @var Swift_Mailer
      */
     protected $mailer;
+
     /**
      * @var Swift_Message
      */

@@ -7,7 +7,8 @@ use SplFileObject;
 use Symfony\Component\VarDumper\Cloner\VarCloner;
 use Symfony\Component\VarDumper\Dumper\CliDumper;
 
-class Body {
+class Body
+{
 
     /**
      * @var VarCloner
@@ -34,7 +35,8 @@ class Body {
      * @param array $extra
      * @return string
      */
-    public function build(Exception $e, array $extra) {
+    public function build(Exception $e, array $extra)
+    {
         ob_start();
         include __DIR__ . '/body.tpl.php';
         return ob_get_clean();
@@ -59,7 +61,7 @@ class Body {
     protected function getCode($path, $line, $numLines)
     {
         if (empty($path) || empty($line) || !file_exists($path)) {
-            return NULL;
+            return null;
         }
 
         try {

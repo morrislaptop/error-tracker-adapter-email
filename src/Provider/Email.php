@@ -69,5 +69,4 @@ class Email extends AbstractProvider
 
         return $this->message;
     }
-
 }

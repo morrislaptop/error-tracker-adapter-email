@@ -35,7 +35,7 @@ class Email extends AbstractProvider
      * @param Body $body
      * @param Compiler $compiler
      */
-    function __construct(Swift_Mailer $mailer, Swift_Message $message, Body $body, Compiler $compiler)
+    public function __construct(Swift_Mailer $mailer, Swift_Message $message, Body $body, Compiler $compiler)
     {
         $this->mailer        = $mailer;
         $this->message       = $message;

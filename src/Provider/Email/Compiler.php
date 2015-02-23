@@ -19,13 +19,13 @@ class Compiler
      * @param CommonMarkConverter $markdowner
      * @param CssToInlineStyles $inliner
      */
-    function __construct(CommonMarkConverter $markdowner, CssToInlineStyles $inliner)
+    public function __construct(CommonMarkConverter $markdowner, CssToInlineStyles $inliner)
     {
         $this->markdowner = $markdowner;
         $this->inliner    = $inliner;
     }
 
-    function compile($body)
+    public function compile($body)
     {
         $css  = file_get_contents(__DIR__ . '/../../../bower_components/github-markdown-css/github-markdown.css');
         $html = '<div class="markdown-body">' . $this->markdowner->convertToHtml($body) . '</div>';

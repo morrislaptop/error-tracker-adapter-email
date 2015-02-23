@@ -34,11 +34,6 @@ class EmailTest extends PHPUnit_Framework_TestCase
 
     public function testReport()
     {
-        var_dump(getenv('MAILTRAP_USERNAME'));
-        var_dump(getenv('MAILTRAP_PASSWORD'));
-        var_dump(getenv('MAILTRAP_INBOX'));
-        var_dump(getenv('MAILTRAP_TOKEN'));
-
         //  Arrange.
         $transport = new \Swift_SmtpTransport();
         $transport->setHost('mailtrap.io');

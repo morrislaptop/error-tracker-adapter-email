@@ -4,7 +4,7 @@
     "require": {
         "morrislaptop/error-tracker-adapter": "dev-master",
         "swiftmailer/swiftmailer": "~5.3",
-        "league/commonmark": "0.7.*",
+        "league/commonmark": "~0.7",
         "symfony/var-dumper": "~2.6",
         "tijsverkoyen/css-to-inline-styles": "~1.5"
     },
